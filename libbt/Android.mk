@@ -42,10 +42,10 @@ endif
 ifeq ($(TARGET_PRODUCT), full_wingray)
     include $(LOCAL_PATH)/conf/moto/wingray/Android.mk
 endif
-ifeq ($(TARGET_PRODUCT), full_vision)
+ifeq ($(TARGET_PRODUCT), cm_vision)
     include $(LOCAL_PATH)/conf/htc/vision/Android.mk
 endif
-ifeq ($(TARGET_PRODUCT), full_saga)
+ifeq ($(TARGET_PRODUCT), cm_saga)
     include $(LOCAL_PATH)/conf/htc/saga/Android.mk
 endif
 
