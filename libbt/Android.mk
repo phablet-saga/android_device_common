@@ -48,5 +48,8 @@ endif
 ifeq ($(TARGET_PRODUCT), full_saga)
     include $(LOCAL_PATH)/conf/htc/saga/Android.mk
 endif
+ifeq ($(TARGET_PRODUCT), cm_ace)
+    include $(LOCAL_PATH)/conf/htc/ace/Android.mk
+endif
 
 endif # BOARD_HAVE_BLUETOOTH_BCM
