@@ -42,5 +42,14 @@ endif
 ifeq ($(TARGET_PRODUCT), full_wingray)
     include $(LOCAL_PATH)/conf/moto/wingray/Android.mk
 endif
+ifeq ($(TARGET_PRODUCT), cm_vision)
+    include $(LOCAL_PATH)/conf/htc/vision/Android.mk
+endif
+ifeq ($(TARGET_PRODUCT), cm_saga)
+    include $(LOCAL_PATH)/conf/htc/saga/Android.mk
+endif
+ifeq ($(TARGET_PRODUCT), cm_ace)
+    include $(LOCAL_PATH)/conf/htc/ace/Android.mk
+endif
 
 endif # BOARD_HAVE_BLUETOOTH_BCM
